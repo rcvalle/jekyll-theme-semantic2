@@ -1,0 +1,45 @@
+<div class="computer only row">
+  <div class="column">
+    <div class="ui inverted fixed menu">
+      {% if page.type == "home" and paginator.page == 1 %}
+        <a href="{{ "/" | relative_url }}" class="header item">{{ site.title | liquify }}</a>
+      {% else %}
+        <a href="{{ "/" | relative_url }}" class="header item">{{ site.title | liquify }}</a>
+      {% endif %}
+      {% assign pages = site.pages | sort: 'title' %}
+      {% for item in pages %}
+        {% if item.type == "page" %}
+          {% if item.title == page.title %}
+            <a href="{{ item.url | relative_url }}" class="active item">{{ item.title | liquify }}</a>
+          {% else %}
+            <a href="{{ item.url | relative_url }}" class="item">{{ item.title | liquify }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="mobile tablet only row">
+  <div class="column">
+    <div class="ui sidebar inverted vertical menu">
+      {% if page.type == "home" and paginator.page == 1 %}
+        <a href="{{ "/" | relative_url }}" class="header item">{{ site.title | liquify }}</a>
+      {% else %}
+        <a href="{{ "/" | relative_url }}" class="header item">{{ site.title | liquify }}</a>
+      {% endif %}
+      {% assign pages = site.pages | sort: 'title' %}
+      {% for item in pages %}
+        {% if item.type == "page" %}
+          {% if item.title == page.title %}
+            <a href="{{ item.url | relative_url }}" class="active item">{{ item.title | liquify }}</a>
+          {% else %}
+            <a href="{{ item.url | relative_url }}" class="item">{{ item.title | liquify }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="ui inverted fixed menu">
+      <a class="toggle icon item"><i class="sidebar icon"></i></a>
+    </div>
+  </div>
+</div>

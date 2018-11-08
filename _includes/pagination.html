@@ -1,0 +1,25 @@
+{% if paginator.total_pages > 1 %}
+  <div class="ui pagination menu">
+    {% if paginator.page == 2 %}
+      <a href="{{ "/" | relative_url }}" class="item"><i class="angle left icon"></i></a>
+    {% elsif paginator.previous_page %}
+      <a href="{{ site.paginate_path | replace: ":num", paginator.previous_page | relative_url }}" class="item"><i class="angle left icon"></i></a>
+    {% else %}
+      <span class="disabled item"><i class="angle left icon"></i></span>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <span class="active item">{{ page }}</span>
+      {% elsif page == 1 %}
+        <a href="{{ "/" | relative_url }}" class="item">{{ page }}</a>
+      {% else %}
+        <a href="{{ site.paginate_path | replace: ":num", page | relative_url }}" class="item">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <a href="{{ site.paginate_path | replace: ":num", paginator.next_page | relative_url }}" class="item"><i class="angle right icon"></i></a>
+    {% else %}
+      <span class="disabled item"><i class="angle right icon"></i></span>
+    {% endif %}
+  </div>
+{% endif %}
