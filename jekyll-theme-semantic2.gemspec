@@ -1,4 +1,5 @@
 Gem::Specification.new do |spec|
+  spec.authors     = ['Ramon de C Valle']
   spec.files       = Dir[*%w(_config.yml _includes/**/* _layouts/**/* _plugins/**/* *.html *.xml CONTRIBUTING* LICENSE* README*)]
   spec.name        = 'jekyll-theme-semantic2'
   spec.summary     = 'A Semantic UI -based Jekyll theme.'
