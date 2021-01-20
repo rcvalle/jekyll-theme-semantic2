@@ -1,4 +1,5 @@
 baseurl: /jekyll-theme-semantic2
+excerpts: true
 exclude:
   - "*.gemspec"
   - "CONTRIBUTING*"
