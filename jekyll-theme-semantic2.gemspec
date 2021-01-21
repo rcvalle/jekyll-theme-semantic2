@@ -5,7 +5,7 @@ Gem::Specification.new do |spec|
   end
   spec.name        = 'jekyll-theme-semantic2'
   spec.summary     = 'A Semantic UI -based Jekyll theme.'
-  spec.version     = '0.0.4'
+  spec.version     = '0.0.5'
 
   spec.author      = 'Ramon de C Valle'
   spec.description = ''
