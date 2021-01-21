@@ -1,7 +1,7 @@
 jekyll-theme-semantic2
 ======================
 
-[![Build Status](https://travis-ci.com/rcvalle/jekyll-theme-semantic2.svg?branch=master)](https://travis-ci.com/rcvalle/jekyll-theme-semantic2)
+![Build Status](https://github.com/rcvalle/jekyll-theme-semantic2/workflows/build/badge.svg)
 
 A [Semantic UI -based](https://semantic-ui.com/) Jekyll theme.
 
