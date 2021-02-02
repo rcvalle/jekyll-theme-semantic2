@@ -1,4 +1,6 @@
+author: Ramon de C Valle
 baseurl: /jekyll-theme-semantic2
+description: A Semantic UI -based Jekyll theme.
 excerpts: true
 exclude:
   - "*.gemspec"
