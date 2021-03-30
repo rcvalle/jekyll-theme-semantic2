@@ -8,7 +8,7 @@ type: category
     <main>
       <div class="ui text container">
         {% for post in site.categories[page.category] %}
-          <div class="ui basic vertical segment">
+          <div class="ui padded basic vertical segment">
             {% include post.html post=post %}
           </div>
         {% endfor %}

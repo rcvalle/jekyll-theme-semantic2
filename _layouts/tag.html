@@ -8,7 +8,7 @@ type: tag
     <main>
       <div class="ui text container">
         {% for post in site.tags[page.tag] %}
-          <div class="ui basic vertical segment">
+          <div class="ui padded basic vertical segment">
             {% include post.html post=post %}
           </div>
         {% endfor %}
