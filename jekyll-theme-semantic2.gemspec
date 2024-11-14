@@ -1,3 +1,5 @@
+Version = [0, 0, 10]
+
 Gem::Specification.new do |spec|
   spec.authors     = ['Ramon de C Valle']
   spec.files       = Dir.chdir(File.expand_path('..', __FILE__)) do
@@ -5,7 +7,7 @@ Gem::Specification.new do |spec|
   end
   spec.name        = 'jekyll-theme-semantic2'
   spec.summary     = 'A Semantic UI -based Jekyll theme.'
-  spec.version     = '0.0.10'
+  spec.version     = Version.join('.')
 
   spec.author      = 'Ramon de C Valle'
   spec.description = ''
